@@ -69,7 +69,6 @@ io.on("connection", (socket) => {
     const filter = new Filter();
 
     if (filter.isProfane(chatMessage)) {
-      alert("Please be civil!");
       return callback("Please be civil!");
     }
 
